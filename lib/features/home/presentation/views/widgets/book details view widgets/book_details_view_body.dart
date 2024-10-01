@@ -20,7 +20,8 @@ class BookDetailsViewBody extends StatelessWidget {
               children: [
                 const CustomBookDetailsAppbar(),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * .20),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: MediaQuery.of(context).size.width * .20),
                   child: const CustomListViewItem(),
                 ),
                 const SizedBox(
@@ -28,7 +29,8 @@ class BookDetailsViewBody extends StatelessWidget {
                 ),
                 Text(
                   'The Jungle Book',
-                  style: Styles.textStyle30.copyWith(fontWeight: FontWeight.bold),
+                  style:
+                      Styles.textStyle30.copyWith(fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(
                   height: 4,

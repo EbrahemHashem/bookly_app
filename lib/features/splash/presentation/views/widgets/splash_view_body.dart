@@ -13,14 +13,18 @@ class SplashViewBody extends StatefulWidget {
   State<SplashViewBody> createState() => _SplashViewBodyState();
 }
 
-class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProviderStateMixin {
+class _SplashViewBodyState extends State<SplashViewBody>
+    with SingleTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation<Offset> slidingAnimation;
   @override
   void initState() {
     super.initState();
-    animationController = AnimationController(vsync: this, duration: const Duration(seconds: 2));
-    slidingAnimation = Tween<Offset>(begin: const Offset(1, 10), end: Offset.zero).animate(animationController);
+    animationController =
+        AnimationController(vsync: this, duration: const Duration(seconds: 2));
+    slidingAnimation =
+        Tween<Offset>(begin: const Offset(1, 10), end: Offset.zero)
+            .animate(animationController);
     animationController.forward();
     navigateToHome();
   }

@@ -22,12 +22,14 @@ class CustomButton extends StatelessWidget {
       child: TextButton(
         style: TextButton.styleFrom(
           backgroundColor: backgroundColor,
-          shape: RoundedRectangleBorder(borderRadius: borderRadius ?? BorderRadius.circular(14)),
+          shape: RoundedRectangleBorder(
+              borderRadius: borderRadius ?? BorderRadius.circular(14)),
         ),
         onPressed: () {},
         child: Text(
           text,
-          style: Styles.textStyle16.copyWith(color: textColor, fontWeight: FontWeight.bold),
+          style: Styles.textStyle16
+              .copyWith(color: textColor, fontWeight: FontWeight.bold),
         ),
       ),
     );
