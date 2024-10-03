@@ -12,7 +12,7 @@ final class BestSellerListViewInitial extends BestSellerListViewState {}
 final class BestSellerListViewSuccess extends BestSellerListViewState {
   final List<Item> books;
 
-  const BestSellerListViewSuccess({required this.books});
+  const BestSellerListViewSuccess(this.books);
 }
 
 final class BestSellerListViewLoading extends BestSellerListViewState {}
