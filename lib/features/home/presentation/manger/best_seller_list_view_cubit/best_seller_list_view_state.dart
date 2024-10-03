@@ -8,3 +8,16 @@ sealed class BestSellerListViewState extends Equatable {
 }
 
 final class BestSellerListViewInitial extends BestSellerListViewState {}
+
+final class BestSellerListViewSuccess extends BestSellerListViewState {
+  final List<Item> books;
+
+  const BestSellerListViewSuccess({required this.books});
+}
+
+final class BestSellerListViewLoading extends BestSellerListViewState {}
+
+final class BestSellerListViewFailure extends BestSellerListViewState {
+  final String errMessage;
+  const BestSellerListViewFailure(this.errMessage);
+}
